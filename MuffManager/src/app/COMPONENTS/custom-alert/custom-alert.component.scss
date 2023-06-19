@@ -1,0 +1,41 @@
+.custom-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  
+  .custom-dialog.show .custom-dialog-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .custom-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  
+  .custom-dialog.show .custom-dialog {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .custom-dialog-content {
+    /* Stile del contenuto */
+  }
+  
