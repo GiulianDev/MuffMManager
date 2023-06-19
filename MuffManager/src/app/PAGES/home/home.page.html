@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>HOME</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">HOME</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <div *ngFor="let item of legoList">
+    
+    <ion-card>
+      <ion-card-header>
+        
+        <div class="header-container">
+
+          <div class="header">
+            <ion-card-title>{{item.name}}</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </div>
+          
+          <!-- <ion-checkbox>Closed</ion-checkbox> -->
+
+
+          <partial [value]=item.Partial></partial>
+          
+          <div class="closed-icon" *ngIf="item.closed">
+            <ion-icon name='lock-closed'></ion-icon>
+          </div>
+
+
+
+          
+        </div>
+      </ion-card-header>
+      
+      
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+    
+  </div>
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of legoList">
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{item}}</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+
+    </ion-item>
+  </ion-list> -->
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="addItem()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  
+  
+</ion-content>

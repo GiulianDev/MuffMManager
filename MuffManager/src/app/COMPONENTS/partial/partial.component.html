@@ -1,0 +1,3 @@
+<div class="partial" [ngClass]="{ 'numero-rosso': value < 0, 'numero-verde': value > 0 }">
+  {{ value | currency: 'EUR' : true : '1.0-0' }}
+</div>
