@@ -22,4 +22,13 @@ export class Lego implements ILego {
        this.sell = sell;
     }
 
+
+    get Partial(): number {
+        let partial = -this.paid;
+               this.sell.forEach(element => {
+                   partial += element;
+               });
+               return partial;
+    }
 }
+

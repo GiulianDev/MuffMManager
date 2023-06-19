@@ -21,11 +21,21 @@
         <div class="header-container">
 
           <div class="header">
-            <ion-card-title>{{item}}</ion-card-title>
+            <ion-card-title>{{item.name}}</ion-card-title>
             <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
           </div>
           
-          <ion-checkbox>Closed</ion-checkbox>
+          <!-- <ion-checkbox>Closed</ion-checkbox> -->
+
+
+          <partial [value]=item.Partial></partial>
+          
+          <div class="closed-icon" *ngIf="item.closed">
+            <ion-icon name='lock-closed'></ion-icon>
+          </div>
+
+
+
           
         </div>
       </ion-card-header>
@@ -60,6 +70,7 @@
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+  
   
   
 </ion-content>

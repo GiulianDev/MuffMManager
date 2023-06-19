@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CustomAlertComponent } from './custom-alert.component';
+import { PartialComponent } from './partial.component';
 
-describe('CustomAlertComponent', () => {
-  let component: CustomAlertComponent;
-  let fixture: ComponentFixture<CustomAlertComponent>;
+describe('PartialComponent', () => {
+  let component: PartialComponent;
+  let fixture: ComponentFixture<PartialComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomAlertComponent ],
+      declarations: [ PartialComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CustomAlertComponent);
+    fixture = TestBed.createComponent(PartialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
