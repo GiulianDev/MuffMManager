@@ -23,6 +23,11 @@ export class Lego implements ILego {
     }
 
 
+    get Sell(): number {
+        let sum = this.sell.reduce((a, b) => a + b, 0);
+        return sum;
+    }
+
     get Partial(): number {
         let partial = -this.paid;
                this.sell.forEach(element => {

@@ -3,6 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+   // Colori personalizzati
+   --red-currency: #ff3f00;
+   --green-currency: #bdd358;
+   --currency-bg: #607b7d94;
+
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -233,4 +240,6 @@
 
     --ion-card-background: #1e1e1e;
   }
+
+
 }

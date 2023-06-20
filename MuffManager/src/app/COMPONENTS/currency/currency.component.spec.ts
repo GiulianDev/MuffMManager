@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { PartialComponent } from './partial.component';
+import { CurrencyComponent } from './currency.component';
 
-describe('PartialComponent', () => {
-  let component: PartialComponent;
-  let fixture: ComponentFixture<PartialComponent>;
+describe('CurrencyComponent', () => {
+  let component: CurrencyComponent;
+  let fixture: ComponentFixture<CurrencyComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PartialComponent ],
+      declarations: [ CurrencyComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PartialComponent);
+    fixture = TestBed.createComponent(CurrencyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

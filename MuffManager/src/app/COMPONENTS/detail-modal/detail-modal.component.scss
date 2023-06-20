@@ -1,0 +1,24 @@
+.container {
+    padding: 10px;
+    .header {
+        // padding: 10px;
+    }
+    .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .buy {
+            padding: 10px;
+        }
+        .sell {
+            padding: 10px;
+            .line{
+                height: 0.05rem;
+                width: 100%;
+                background-color: azure;
+                margin-top: 0.1rem;
+                margin-bottom: 0.1rem;
+            }
+        }
+    }
+}

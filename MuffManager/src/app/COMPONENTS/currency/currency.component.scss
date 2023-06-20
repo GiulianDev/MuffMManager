@@ -1,0 +1,11 @@
+@import '../../../theme/variables.scss';
+
+.partial {
+    font-size: 1.2rem;
+}
+.numero-rosso {
+    color: var(--red-currency);
+}
+.numero-verde {
+    color: var(--green-currency);
+}
