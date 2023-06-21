@@ -1,24 +1,30 @@
 <div class="container">
 
   <div class="header">
-    {{item?.name}}
+    {{item.name}}
   </div>
 
   <div class="body">
 
     <div class="buy">
-      <div>Buy</div>
-      <div>{{item?.paid}}</div>
+      <div>Pagato</div>
+      <currency [value]=item.paid></currency>
     </div>
 
     <div class="sell">
-      <div>Sell</div>
-      <div *ngFor="let sell of item?.sell">{{sell}}</div>
+      <div>Ricavato</div>
+      <!-- <div *ngFor="let sell of item?.sell">{{sell}}</div> -->
+      <currency *ngFor="let sell of item.sell" [value]=sell [colored]="false"></currency>
       <div class="line"></div>
-      <div>Total</div>
-      <div>{{item?.Sell}}</div>
+      <!-- <div>Totale</div> -->
+      <currency [value]=item.Sell></currency>
     </div>
 
+  </div>
+
+  <div class="net">
+    <div class="label">Netto: </div>
+    <currency [value]="item.Partial"></currency>
   </div>
   
 </div>

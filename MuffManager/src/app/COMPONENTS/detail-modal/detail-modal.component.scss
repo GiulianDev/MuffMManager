@@ -1,17 +1,26 @@
 .container {
     padding: 10px;
+    height: 100%;
     .header {
         // padding: 10px;
+        font-size: 2rem;
+        height: 20%;
     }
     .body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+        height: 60%;
         .buy {
             padding: 10px;
         }
         .sell {
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
             .line{
                 height: 0.05rem;
                 width: 100%;
@@ -19,6 +28,17 @@
                 margin-top: 0.1rem;
                 margin-bottom: 0.1rem;
             }
+        }
+    }
+    .net {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem !important;
+        padding: 0.5rem;
+        height: 20%;
+        .label {
+            padding-right: 0.2rem;
         }
     }
 }
