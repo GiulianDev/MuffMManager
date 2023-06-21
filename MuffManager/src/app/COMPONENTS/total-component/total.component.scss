@@ -1,9 +1,7 @@
-@import '../../../theme/variables.scss';
-
 .total {
     position: fixed;
     bottom: 0px;
-    height: 2.2rem;
+    height: 2.4rem;
     width: 100%;
     background-color: var(--currency-bg);
     backdrop-filter: blur(5px);
@@ -16,11 +14,4 @@
     .value {
         margin-left: 1rem;
     }
-}
-
-.numero-rosso {
-    color: var(--red-currency);
-}
-.numero-verde {
-    color: var(--green-currency);
 }

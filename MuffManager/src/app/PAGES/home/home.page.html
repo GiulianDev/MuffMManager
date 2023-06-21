@@ -16,7 +16,7 @@
 
   <div *ngFor="let item of legoList">
     
-    <ion-card (click)="presentModal(item)">
+    <ion-card (click)="presentDetailModal(item)">
 
       <ion-card-header>
         
@@ -27,15 +27,14 @@
             <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
           </div>
           <!-- PARTIAL VALUE -->
-          <currency [value]=item.Partial></currency>
+          <currency class="fs12" [value]=item.Partial></currency>
           <!-- CLOSED ICON -->
           <div class="closed-icon" *ngIf="item.closed">
             <ion-icon name='lock-closed'></ion-icon>
           </div>
         </div>
       </ion-card-header>
-      
-      
+      <!-- CONTENT -->
       <ion-card-content>
         Here's a small text description for the card content. Nothing more, nothing less.
       </ion-card-content>
@@ -50,7 +49,7 @@
 
   <!-- ADD BUTTON -->
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="addItem()">
+    <ion-fab-button (click)="presentAddModal()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

@@ -11,6 +11,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CurrencyComponent {
   @Input() value: number = 0;
+  @Input() colored: boolean = true;
 
   constructor() { }
 
