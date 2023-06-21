@@ -1,0 +1,20 @@
+<div class="content">
+  
+  <form (ngSubmit)="submitForm()">
+
+    <div class="form-content">
+
+      <!-- Inserisci qui gli input, i bottoni e gli elementi del form -->
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input label="name" [(ngModel)]="formData.nome" name="nome"></ion-input>
+      </ion-item>
+      <!-- Aggiungi altri campi del form qui -->
+      
+      <ion-button type="submit" expand="full">Salva</ion-button>
+      
+    </div>
+
+  </form>
+
+</div>

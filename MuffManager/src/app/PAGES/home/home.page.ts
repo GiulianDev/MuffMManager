@@ -7,6 +7,7 @@ import { LegoService } from 'src/app/SERVICES/lego.service';
 import { DetailModalComponent } from 'src/app/COMPONENTS/detail-modal/detail-modal.component';
 import { TotalComponent } from 'src/app/COMPONENTS/total-component/total.component';
 import { CurrencyComponent } from 'src/app/COMPONENTS/currency/currency.component';
+import { AddModalComponent } from 'src/app/COMPONENTS/add-modal/add-modal.component';
 
 @Component({
   selector: 'app-home',
@@ -44,9 +45,8 @@ export class HOMEPage implements OnInit {
   addItem(): void {
   }
 
-  async presentModal(item: Lego) {
+  async presentDetailModal(item: Lego) {
     console.log("item:", item);
-    
     const modal = await this.modalController.create({
       component: DetailModalComponent,
       componentProps: { data: item }
@@ -54,7 +54,13 @@ export class HOMEPage implements OnInit {
     await modal.present();
   }
 
-
+  async presentAddModal() {
+    const modal = await this.modalController.create({
+      component: AddModalComponent,
+      // componentProps: { data: item }
+    });
+    await modal.present();
+  }
   
   
 }
