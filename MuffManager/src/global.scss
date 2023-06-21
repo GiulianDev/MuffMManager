@@ -26,17 +26,22 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 
+:root {
+  --ion-backdrop-opacity: 0.5; // change backdrop opacity
+}
+
 ion-modal {
     --height: 50%;
     --width: 90%;
-    --border-radius: 16px;
+    // --border-radius: 16px;
+    --border-radius: 8px;
     --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    background: rgba(0, 0, 0, 0.5); // change modal backdrop
+    --ion-background-color: #1b1b1b; // change modal background
+      // --backdrop-filter: blur(1px); /* Adjust the blur intensity as needed */
+      // backdrop-filter: blur(1px); /* Adjust the blur intensity as needed */
   }
   
-  ion-modal::part(backdrop) {
-    background: rgba(209, 213, 219);
-    opacity: 1;
-  }
   
   ion-modal ion-toolbar {
     --background: rgb(14 116 144);
