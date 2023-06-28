@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule, ModalController } from '@ionic/angular';
+import { IonicModule, ModalController, NavController } from '@ionic/angular';
 import { Lego } from 'src/app/MODELS/CLASSES/Lego';
 import { LegoService } from 'src/app/SERVICES/lego.service';
 import { DetailModalComponent } from 'src/app/COMPONENTS/detail-modal/detail-modal.component';
@@ -27,6 +27,7 @@ export class HOMEPage implements OnInit {
   public dialogVisible = true;
 
   constructor(
+    private navCtrl: NavController,
     private legoService: LegoService,
     private modalController: ModalController) {}
 
@@ -42,7 +43,8 @@ export class HOMEPage implements OnInit {
     // });
   }
 
-  addItem(): void {
+  goToAddItem(): void {
+    this.navCtrl.navigateForward('/add-item');
   }
 
   async presentDetailModal(item: Lego) {

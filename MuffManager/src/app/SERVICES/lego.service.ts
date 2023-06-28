@@ -18,6 +18,9 @@ export class LegoService {
       new Lego(1, "Lego 5", false, 893, [5, 20, 320, 90, 900]),
       new Lego(1, "Lego 6", true, 293, [50, 20, 320, 90, 900]),
       new Lego(1, "Lego 7", false, 8093, [587, 20, 320, 90, 900]),
+      new Lego(1, "Lego 7", false, 8093, [587, 20, 320, 90, 900]),
+      new Lego(1, "Lego 7", false, 8093, [587, 20, 320, 90, 900]),
+      new Lego(1, "Lego 7", false, 8093, [587, 20, 320, 90, 900]),
     ]
   }
 

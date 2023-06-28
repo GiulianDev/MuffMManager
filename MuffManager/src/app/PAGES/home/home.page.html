@@ -6,11 +6,11 @@
 
 <ion-content [fullscreen]="true">
 
-  <!-- <ion-header collapse="condense">
+  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">HOME</ion-title>
+      <ion-title size="large">MUFFMANAGER</ion-title>
     </ion-toolbar>
-  </ion-header> -->
+  </ion-header>
 
   
 
@@ -49,8 +49,9 @@
 
   <!-- ADD BUTTON -->
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="presentAddModal()">
-      <ion-icon name="add"></ion-icon>
+    <!-- <ion-fab-button (click)="presentAddModal()"> -->
+    <ion-fab-button (click)="goToAddItem()">
+        <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
   
